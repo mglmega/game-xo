@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mg shoot game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <img src="./img/bg.jpg" class="loadfiles" alt="" />
+    <img src="./img/TARGET_CURSOR.cur" class="loadfiles" alt="" />
+
+    <img src="./img/gameover.png" class="loadfiles" alt="" id="gameoverImg" />
+    <img src="./img/mg.png" class="loadfiles" id="mgImg" alt="" />
+    <img src="./img/boom.png" id="boomImg" class="loadfiles" alt="" />
+    <img src="./img/heart.png" id="heartImg" class="loadfiles" alt="" />
+
+    <audio
+      src="./sounds/eviljest.flac"
+      id="eviljestAudio"
+      class="loadfiles"
+    ></audio>
+    <audio
+      src="./sounds/welldone.ogg"
+      id="welldoneAudio"
+      class="loadfiles"
+    ></audio>
+    <audio
+      src="./sounds/zombie-4.wav"
+      id="zombieAudio"
+      class="loadfiles"
+    ></audio>
+
+    <a href="#" id="startBtn">Тоглож эхлэх</a>
+    <canvas id="collision"></canvas>
+    <canvas id="game"></canvas>
+  </body>
+</html>

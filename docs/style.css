@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loadfiles{
+    display: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* background:linear-gradient(to bottom , red , orange, yellow); */
+    background: url(./img/bg.jpg) no-repeat center center/cover;
+}
+canvas{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: url(./img/TARGET_CURSOR.cur), default;
+}
+#collision{
+    opacity: 0;
+}
+
+#startBtn{
+    font-weight: 900;
+    font-size: 36px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #eee;
+    text-decoration: none;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    z-index: 99;
+}
+#startBtn:hover{
+    color: #fff;
+    text-decoration: underline;
+}
